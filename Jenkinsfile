@@ -9,10 +9,10 @@ pipeline
       {
         echo 'executing yarn...'
         nodejs('myNodeJs')
-       {
+        {
         sh 'yarn install'
         echo 'with yarn...'
-       }
+        }
       }
     }
     stage("run backend")
@@ -20,7 +20,8 @@ pipeline
       steps
       {
          echo 'executing gradle...'
-         withGradle() {
+         withGradle() 
+         {
          chmod +x gradlew
          sh './gradlew -v'
          }
