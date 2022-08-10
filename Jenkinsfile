@@ -23,8 +23,6 @@ pipeline
         withGradle()
        {
         sh chmod +x gradlew
-        sh './gradlew -v'
-        echo 'with gradle...'
        }
       }
     }
