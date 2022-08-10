@@ -20,10 +20,9 @@ pipeline
       steps
       {
         echo 'executing gradle...'
-        withGradle()
-       {
-        chmod +x gradlew
-       }
+        withGradle(){
+         chmod +x gradlew
+        }
       }
     }
   }
