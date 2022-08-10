@@ -21,7 +21,7 @@ pipeline
         echo 'executing gradle...'
         withGradle()
        {
-        $ls -l ./gradlew
+        sh sudo apt-get install gradle
         sh './gradlew -v'
        }
       }
