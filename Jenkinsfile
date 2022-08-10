@@ -21,6 +21,7 @@ pipeline
         echo 'executing gradle...'
         withGradle()
        {
+        sh 'chmod 755 gradlew'
         sh './gradlew -v'
        }
       }
