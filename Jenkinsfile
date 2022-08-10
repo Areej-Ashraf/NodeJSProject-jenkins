@@ -11,6 +11,7 @@ pipeline
         nodejs('myNodeJs')
        {
         sh 'yarn install'
+        echo 'with yarn...'
        }
       }
     }
@@ -23,6 +24,7 @@ pipeline
        {
         sh chmod +x gradlew
         sh './gradlew -v'
+        echo 'with gradle...'
        }
       }
     }
