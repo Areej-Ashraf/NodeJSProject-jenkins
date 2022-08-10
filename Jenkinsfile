@@ -22,7 +22,7 @@ pipeline
         echo 'executing gradle...'
         withGradle()
        {
-        sh chmod +x gradlew
+        chmod +x gradlew
        }
       }
     }
